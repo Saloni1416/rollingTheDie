@@ -1,0 +1,24 @@
+using System;
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+           
+           Random numbGen=new Random();
+           int roll=0;
+           int attempt=0;
+           Console.WriteLine("Press enter to roll the die");
+           while(roll!=6){
+               Console.ReadKey();
+               roll=numbGen.Next(1,7);
+               Console.WriteLine("You rolled : "+roll);
+               attempt++;
+
+
+           }
+           Console.WriteLine("It took you "+attempt+ " attempts to roll six");
+            }
+
+}}
